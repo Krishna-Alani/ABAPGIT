@@ -1,0 +1,5 @@
+CLASS zbp_r_handlingunittp DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zr_handlingunittp.
+ENDCLASS.
+
+CLASS zbp_r_handlingunittp IMPLEMENTATION.
+ENDCLASS.

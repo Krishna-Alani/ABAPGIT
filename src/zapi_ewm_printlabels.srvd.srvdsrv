@@ -1,0 +1,4 @@
+@EndUserText.label: 'Print Labels API'
+define service ZAPI_EWM_PRINTLABELS {
+  expose ZR_EWM_PRINT_LABELSTP as EWMPrintLabels;
+}

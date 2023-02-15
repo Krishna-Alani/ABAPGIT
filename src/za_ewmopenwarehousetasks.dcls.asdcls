@@ -1,0 +1,10 @@
+@EndUserText.label: 'Auto assigned mapping Warehouse Task'
+@MappingRole: true
+define role ZA_EWMOPENWAREHOUSETASKS {
+    grant
+        select
+            on
+                ZA_EWMOPENWAREHOUSETASKS
+                    where
+                     ( EWMWarehouse ) = aspect pfcg_auth( /SCWM/TOHA, /SCWM/LGNU , ACTVT = '03');
+}

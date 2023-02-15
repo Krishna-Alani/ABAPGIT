@@ -1,0 +1,5 @@
+@EndUserText.label: 'Warehouse Available Stocks'
+define service Zapi_WHSE_AVAILABLESTOCK {
+  expose za_ewm_availablestock as AvailableStock;
+  expose ZA_EWM_DELIVERYHUSERIALNUMBERS as AvailableHUSerialNumbers;
+}

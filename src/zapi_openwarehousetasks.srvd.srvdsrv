@@ -1,0 +1,4 @@
+@EndUserText.label: 'Open Warehouse Tasks'
+define service ZAPI_OPENWAREHOUSETASKS {
+  expose ZA_EWMOpenWarehouseTasks as OpenWarehouseTask;
+}

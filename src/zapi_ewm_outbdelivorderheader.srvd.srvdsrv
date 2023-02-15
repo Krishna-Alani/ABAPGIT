@@ -1,0 +1,6 @@
+@EndUserText.label: 'Outbound Delivery API'
+define service ZAPI_EWM_OutbDelivOrderHeader {
+  expose ZR_EWM_OutbDelivOrderHeaderTP as OutbDelivOrderHeader;
+  expose ZR_EWM_OutbDelivOrderItemTP as OutbDelivOrderItem;
+  expose zr_ewm_outbdelivorderstatustp as OutbDelivOrderStatus;
+}

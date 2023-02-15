@@ -1,0 +1,7 @@
+@EndUserText.label: 'Handling Unit Custom API'
+define service ZAPI_HANDLINGUNIT {
+  expose ZR_handlingunittp as HandlingUnit;
+  expose ZR_HandlingUnitItemTP as HandlingUnitItem;
+  expose ZR_EWM_HANDLINGUNITSTATUSTP as HandlingUnitStatus;
+  expose ZR_EWM_HANDLINGUNITSERIALNUMTP as HandlingUnitSerialNumber;
+}

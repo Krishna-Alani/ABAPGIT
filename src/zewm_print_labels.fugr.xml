@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>EWM Print Labels</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZEWM_PRINT_LABELSTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZEWM_PRINT_LABELS</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZEWM_PRINT_LABELS</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>EWM Print Labels</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_ACTION</PARAMETER>
+       <TYP>CHAR10</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_HUID</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR20</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <TYP>CHAR4</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_LGPLA_FROM</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SCWM/LAGP-LGPLA</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_LGPLA_TO</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SCWM/LAGP-LGPLA</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_LDEST</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>TSP03-PADEST</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_EBELN</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>EBELN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_COPIES</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>RSPOCOPIES</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>LS_PRINT_REQUEST</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZCW_EWM_R_PRINTREQUESTSTP</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_ACTION</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Character Field with Length 10</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_HUID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Char 20</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Undefined range (can be used for patch levels)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_LGPLA_FROM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Storage Bin</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_LGPLA_TO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Storage Bin</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_LDEST</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Spool: Output device</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_EBELN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Purchasing Document Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_COPIES</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Number of copies</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LS_PRINT_REQUEST</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

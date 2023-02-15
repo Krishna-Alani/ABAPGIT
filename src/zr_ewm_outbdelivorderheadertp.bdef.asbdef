@@ -1,0 +1,42 @@
+managed with unmanaged save implementation in class zbp_r_ewm_outbdelivorderheader unique;
+strict;
+
+define behavior for ZR_EWM_OutbDelivOrderHeaderTP //alias <alias_name>
+//persistent table <???>
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  //create;
+  //update;
+  //delete;
+  association _WhseOutbDeliveryOrderItem { }//create; }
+}
+
+define behavior for ZR_EWM_OutbDelivOrderItemTP //alias <alias_name>
+//persistent table <???>
+lock dependent by _WhseOutbDeliveryOrderHead
+authorization dependent by _WhseOutbDeliveryOrderHead
+//etag master <field_name>
+{
+  //update;
+  //delete;
+  field ( readonly ) EWMOutboundDeliveryOrder;
+  association _WhseOutbDeliveryOrderHead;
+  association _WhseOutbDeliveryOrderStatus { }//create; }
+}
+
+define behavior for zr_ewm_outbdelivorderstatustp //alias <alias_name>
+//persistent table <???>
+//lock dependent by <no_to_master_association found>
+lock dependent by _WhseOutbDeliveryOrderHead
+authorization dependent by _WhseOutbDeliveryOrderHead
+//authorization dependent by <no_to_master_association found>
+//etag master <field_name>
+{
+  update;
+  //delete;
+  field ( readonly ) EWMOutboundDeliveryOrder, EWMOutboundDeliveryOrderItem;
+  association _WhseOutbDeliveryOrderHead;
+  association _WhseOutbDeliveryOrderItem;
+}

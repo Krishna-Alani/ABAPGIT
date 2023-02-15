@@ -1,0 +1,4 @@
+@EndUserText.label: 'Confirm Warehouse Task API'
+define service ZAPI_EWM_CONFIRMWAREHOUSETASK {
+  expose zr_ewm_confirmwarehousetasktp as ConfirmWarehouseTask;
+}

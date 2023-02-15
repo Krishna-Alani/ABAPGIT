@@ -1,0 +1,4 @@
+@EndUserText.label: 'EWM IBD and OBD Delivery Ref Doc'
+define service ZAPI_EWM_DELIVERY_REFDOC {
+  expose ZA_EWM_DELIVERYITEM_REFDOC as EWMDeliveryRefDoc;
+}
